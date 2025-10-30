@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial de Conversiones</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <div class="container">
+    <!-- ================= INTERFAZ: Historial ================= -->
+    <div id="interfaz-historial">
+      <div class="header">
+        <h2 class="title">📊 Historial de Conversiones</h2>
+        <p class="subtitle">Todas tus conversiones guardadas</p>
+      </div>
+
+      <div class="history-controls">
+        <!-- Botón para volver al conversor -->
+        <button class="history-button" onclick="location.href='index.html'" style="margin-bottom: 10px; width: 100%;">
+          ← Volver al Conversor
+        </button>
+        
+        <!-- Botón limpiar historial -->
+        <button class="clear-history-button" onclick="limpiarHistorial()">
+          🗑️ Limpiar Historial
+        </button>
+      </div>
+
+      <div class="history-list" id="listaHistorialHtml">
+        Cargando historial...
+      </div>
+    </div>
+  </div>
+
+  <!-- Script compilado -->
+  <script type="module" src="dist/Script.js"></script>
+  
+  <!-- Script para inicializar el historial cuando carga la página -->
+  <script>
+    // Espera a que cargue el Script.js
+    window.addEventListener('load', () => {
+      if (typeof mostrarHistorial === 'function') {
+        mostrarHistorial();
+      }
+    });
+  </script>
+</body>
+</html>

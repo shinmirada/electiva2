@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Monedas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <div class="container">
+    <!-- ================= INTERFAZ 1: Conversor ================= -->
+    <div id="interfaz-conversor">
+      <div class="header">
+        <h1 class="title">💱 Conversor</h1>
+        <p class="subtitle">Convierte monedas al instante con tasas reales</p>
+      </div>
+
+      <!-- El formulario llama a convertir() -->
+      <form class="converter-form" id="formularioConversor" onsubmit="convertir(); return false;">
+        <div class="input-group">
+          <label class="input-label" for="cantidadOrigen">Cantidad a convertir</label>
+          <div class="input-container">
+            <input type="number" id="cantidadOrigen" class="currency-input" placeholder="0.00" step="0.01" min="0"
+              value="100">
+            <select id="monedaOrigen" class="currency-select" onchange="alCambiarMoneda()">
+              <option value="COP">Cargando...</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="swap-container">
+          <!-- Llama a intercambiar() -->
+          <button type="button" class="swap-button" onclick="intercambiar()" title="Intercambiar monedas">
+            <span class="swap-icon">⇄</span>
+          </button>
+        </div>
+
+        <div class="input-group">
+          <label class="input-label" for="cantidadDestino">Resultado</label>
+          <div class="input-container">
+            <input type="number" id="cantidadDestino" class="currency-input" placeholder="0.00" readonly>
+            <select id="monedaDestino" class="currency-select">
+              <option value="USD">Cargando...</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <!-- Botón convertir principal -->
+          <button type="submit" class="convert-button">
+            <span class="button-text">💰 Convertir Ahora</span>
+          </button>
+
+          <!-- Botón actualizar tasas desde API -->
+          <button type="button" class="update-button" id="btnActualizarTasas" onclick="actualizarTasas()">
+            <span class="button-text">🔄 Actualizar Tasas</span>
+          </button>
+
+          <!-- 🆕 Botón consultar tasas -->
+          <button type="button" class="history-button" onclick="location.href='tasas.html'">
+            <span class="button-text">📈 Consultar Tasas</span>
+          </button>
+
+          <!-- Botón ver historial -->
+          <button type="button" class="history-button" onclick="location.href='historial.html'">
+            <span class="button-text">📊 Ver Historial</span>
+          </button>
+        </div>
+      </form>
+
+      <div class="result-container" id="contenedorResultado">
+        <div class="result-text" id="textoResultado">Ingresa un monto y presiona "Convertir Ahora"</div>
+        <div class="result-rate" id="tasaResultado"></div>
+      </div>
+
+      <!-- 🆕 Información del país -->
+      <div id="infoPais" class="info-pais-contenedor">
+        <div class="info-pais-loader">
+          <p>🌍 Cargando información del país...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script compilado -->
+  <script type="module" src="dist/Script.js"></script>
+  
+  <!-- 🆕 Script para cargar monedas dinámicamente -->
+  <script>
+    window.addEventListener('load', () => {
+      if (typeof cargarMonedasConversor === 'function') {
+        cargarMonedasConversor();
+      }
+    });
+  </script>
+</body>
+
+</html>
