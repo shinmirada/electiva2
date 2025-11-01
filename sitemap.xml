@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- Página principal -->
+  <url>
+    <loc>https://electiva2.pages.dev/</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Página de tasas -->
+  <url>
+    <loc>https://electiva2.pages.dev/tasas.html</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Página de historial -->
+  <url>
+    <loc>https://electiva2.pages.dev/historial.html</loc>
+    <lastmod>2025-11-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

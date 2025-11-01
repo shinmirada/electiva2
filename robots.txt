@@ -1,0 +1,17 @@
+# robots.txt para Conversor de Monedas - Electiva2
+
+# Permitir a todos los bots rastrear todo el sitio
+User-agent: *
+Allow: /
+
+# No rastrear archivos de desarrollo (si existen)
+Disallow: /dist/
+Disallow: /src/
+
+# Permitir rastreo de archivos CSS y JS para Google
+User-agent: Googlebot
+Allow: /*.css
+Allow: /*.js
+
+# Ubicación del sitemap
+Sitemap: https://electiva2.pages.dev/sitemap.xml
