@@ -557,3 +557,301 @@ body {
   font-size: 13px;
   opacity: 0.9;
 }
+/* ==== AJUSTES VISUALES ADICIONALES ==== */
+
+/* Centrar todo el contenido verticalmente */
+body {
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Si tienes imágenes grandes, que no se salgan del recuadro */
+img {
+  max-width: 90%;
+  border-radius: 15px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Si tienes un encabezado o título grande */
+h1, h2 {
+  text-align: center;
+  color: #004d7a;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Si el contenido está muy pegado a los bordes */
+.container {
+  margin-top: 50px;
+}
+
+/* Pie de página bonito */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px 0;
+  color: #555;
+  font-size: 14px;
+}
+/* ==== ESTILO MEJORADO Y CENTRADO PARA LAS IMÁGENES ==== */
+
+.imagenes-inicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  /* centra horizontalmente */
+  align-items: center;       /* centra verticalmente */
+  gap: 30px;
+  margin: 40px auto 60px;    /* menos espacio arriba, más abajo */
+  max-width: 1100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.imagenes-inicio h2 {
+  width: 100%;
+  text-align: center;
+  color: #003366;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.imagenes-inicio figure {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 220px;
+  text-align: center;
+}
+
+.imagenes-inicio figure:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.imagenes-inicio img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.imagenes-inicio figcaption {
+  background: linear-gradient(135deg, #0077ff, #00c6ff);
+  color: white;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 10px 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  border-top: 2px solid rgba(255,255,255,0.3);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Ajustes para celulares */
+@media (max-width: 768px) {
+  .imagenes-inicio {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  .imagenes-inicio figure {
+    width: 85%;
+  }
+}
+/* === CENTRAR LA SECCIÓN DEL CONVERSOR === */
+
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centra todo horizontalmente */
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px; /* límite de ancho para mantenerlo centrado */
+  text-align: center;
+}
+
+/* Asegurar que las tarjetas, inputs y botones se adapten al centro */
+.contenedor-principal form,
+.contenedor-principal .tarjeta-pais,
+.contenedor-principal .info-adicional {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Ajuste fino para pantallas pequeñas */
+@media (max-width: 768px) {
+  .contenedor-principal {
+    max-width: 95%;
+  }
+}
+/* ===== CENTRAR TODO EL CONTENIDO SUPERIOR ===== */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* Centra el contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Centrar los textos superiores */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Hacer que el formulario quede centrado */
+#conversor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.converter-form {
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+/* Tarjeta de país centrada */
+.info-pais-contenedor {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Centrar lista de características */
+.features-seo {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+/* ======== SECCIÓN: IMÁGENES DE TASAS ======== */
+.titulo-bonito {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #003366;
+  margin: 40px 0 20px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.galeria-tasas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.tarjeta-tasa {
+  background: #ffffff;
+  border-radius: 16px;
+  width: 230px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-tasa:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.tarjeta-tasa img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px 12px 0 0;
+}
+
+.tarjeta-tasa figcaption {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0055aa;
+  padding: 10px;
+}
+
+/* 📱 Adaptación para móviles */
+@media (max-width: 768px) {
+  .galeria-tasas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta-tasa {
+    width: 85%;
+  }
+}
+.imagenes-tasas {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0077ff;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.tarjetas-tasas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card h3 {
+  background-color: #0077ff;
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+  padding: 10px;
+  font-weight: 600;
+}
