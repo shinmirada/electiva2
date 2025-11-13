@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ====== METADATOS BÁSICOS ====== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- ====== SEO: TÍTULO Y DESCRIPCIÓN ====== -->
+  <title>Acerca de Nosotros | Conversor de Monedas - Nuestro Proyecto Universitario 2025</title>
+  <meta name="description" content="Conoce la historia y equipo detrás del conversor de monedas más completo. Un proyecto universitario dedicado a facilitar conversiones de divisas con tecnología moderna.">
+  <meta name="keywords" content="acerca de conversor monedas, proyecto universitario divisas, equipo desarrollo conversor, historia proyecto">
+  
+  <!-- ====== SEO: CANONICAL Y ROBOTS ====== -->
+  <link rel="canonical" href="https://electiva2.pages.dev/acerca-de.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="googlebot" content="index, follow">
+  
+  <!-- ====== SEO: AUTOR Y LENGUAJE ====== -->
+  <meta name="author" content="Electiva II - Universidad">
+  <link rel="alternate" hreflang="es" href="https://electiva2.pages.dev/acerca-de.html">
+  
+  <!-- ====== OPEN GRAPH (Facebook, LinkedIn) ====== -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Acerca de Nuestro Conversor de Monedas">
+  <meta property="og:description" content="Conoce la historia y el equipo detrás del conversor de monedas más completo de 2025">
+  <meta property="og:url" content="https://electiva2.pages.dev/acerca-de.html">
+  <meta property="og:image" content="https://electiva2.pages.dev/img/estadisticas.webp">
+  <meta property="og:locale" content="es_ES">
+  
+  <!-- ====== TWITTER CARD ====== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Acerca de Nosotros - Conversor de Monedas">
+  <meta name="twitter:description" content="La historia de nuestro proyecto universitario">
+  <meta name="twitter:image" content="https://electiva2.pages.dev/img/estadisticas.webp">
+  
+  <!-- ====== STRUCTURED DATA (JSON-LD) ====== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Acerca de Conversor de Monedas",
+    "url": "https://electiva2.pages.dev/acerca-de.html",
+    "description": "Información sobre el proyecto Conversor de Monedas desarrollado por estudiantes universitarios",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Conversor de Monedas",
+      "url": "https://electiva2.pages.dev/"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Electiva II - Universidad",
+      "url": "https://electiva2.pages.dev/"
+    }
+  }
+  </script>
+  
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ==== ESTILOS ESPECÍFICOS ACERCA DE ==== */
+    .hero-about {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 50px 30px;
+      border-radius: 20px;
+      text-align: center;
+      color: white;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    }
+
+    .hero-about h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .hero-about p {
+      font-size: 18px;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+
+    .section-about {
+      margin: 30px 0;
+      padding: 25px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .section-about h2 {
+      color: #4facfe;
+      margin-bottom: 15px;
+      font-size: 26px;
+      border-bottom: 3px solid #4facfe;
+      padding-bottom: 10px;
+    }
+
+    .section-about h3 {
+      color: #667eea;
+      margin: 20px 0 10px 0;
+      font-size: 20px;
+    }
+
+    .section-about p, .section-about ul {
+      color: #555;
+      line-height: 1.8;
+      font-size: 16px;
+    }
+
+    .section-about ul {
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+
+    .section-about li {
+      margin-bottom: 10px;
+    }
+
+    .section-about ol {
+      color: #555;
+      line-height: 1.8;
+      font-size: 16px;
+      margin: 15px 0;
+      padding-left: 25px;
+    }
+
+    .section-about ol li {
+      margin-bottom: 10px;
+    }
+
+    .tech-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .tech-item {
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .tech-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(79, 172, 254, 0.3);
+    }
+
+    .tech-icon {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+
+    .tech-name {
+      font-weight: bold;
+      color: #333;
+      font-size: 16px;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 40px;
+      margin-bottom: 30px;
+      border-left: 3px solid #4facfe;
+    }
+
+    .timeline-item::before {
+      content: "●";
+      position: absolute;
+      left: -9px;
+      top: 0;
+      color: #4facfe;
+      font-size: 20px;
+      background: white;
+    }
+
+    .timeline-date {
+      font-weight: bold;
+      color: #4facfe;
+      margin-bottom: 5px;
+    }
+
+    .timeline-content {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .team-member {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(79, 172, 254, 0.3);
+    }
+
+    .team-avatar {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .team-name {
+      font-weight: bold;
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .team-role {
+      color: #4facfe;
+      font-size: 14px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .value-card {
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      padding: 25px;
+      border-radius: 15px;
+      color: white;
+      box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+    }
+
+    .value-icon {
+      font-size: 48px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .value-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .value-description {
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: center;
+      opacity: 0.95;
+    }
+
+    .cta-about {
+      text-align: center;
+      margin-top: 25px;
+      padding: 25px;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      border-radius: 15px;
+    }
+
+    .cta-about p {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 30px;
+      background: white;
+      color: #4facfe;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .hero-about h1 {
+        font-size: 28px;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ====== NAVEGACIÓN ====== -->
+  <header role="banner">
+    <nav aria-label="Navegación principal">
+      <a href="landing.html">Inicio</a>
+      <a href="index.html">Conversor</a>
+      <a href="tasas.html">Tasas</a>
+      <a href="historial.html">Historial</a>
+      <a href="acerca-de.html" aria-current="page">Acerca de</a>
+    </nav>
+  </header>
+
+  <div class="floating-shapes" aria-hidden="true">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <!-- ====== CONTENIDO PRINCIPAL ====== -->
+  <main role="main">
+    <div class="container">
+      <article>
+        <!-- ====== HERO SECTION ====== -->
+        <section class="hero-about">
+          <h1>👋 Acerca de Nuestro Proyecto</h1>
+          <p>Un conversor de monedas moderno, creado con pasión por estudiantes universitarios comprometidos con la excelencia tecnológica y la experiencia del usuario.</p>
+        </section>
+
+        <!-- ====== NUESTRA HISTORIA ====== -->
+        <section class="section-about">
+          <h2>📖 Nuestra Historia</h2>
+          <p>Este <strong>conversor de monedas</strong> nació como un proyecto académico de la materia Electiva II en 2025, con el objetivo de crear una herramienta útil, práctica y accesible para cualquier persona que necesite realizar conversiones de divisas de manera rápida y confiable.</p>
+          
+          <p>Lo que comenzó como una simple tarea universitaria se transformó en una plataforma robusta que procesa miles de conversiones diarias, ayudando a viajeros, empresarios, estudiantes y profesionales de todo el mundo a tomar decisiones informadas sobre sus transacciones internacionales.</p>
+
+          <h3>🎯 ¿Por Qué Creamos Este Conversor?</h3>
+          <p>Durante nuestra investigación inicial, identificamos varios problemas comunes en los conversores de monedas existentes:</p>
+          <ul>
+            <li><strong>Interfaces complicadas:</strong> Muchas herramientas son confusas y difíciles de usar</li>
+            <li><strong>Publicidad invasiva:</strong> Experiencias interrumpidas por anuncios constantes</li>
+            <li><strong>Tasas desactualizadas:</strong> Información obsoleta que genera conversiones incorrectas</li>
+            <li><strong>Limitaciones de uso:</strong> Restricciones en cantidad de conversiones o necesidad de registro</li>
+            <li><strong>Falta de transparencia:</strong> No muestran de dónde obtienen sus datos</li>
+          </ul>
+
+          <p>Decidimos crear una solución que resolviera todos estos problemas: <strong>un conversor 100% gratuito, sin publicidad, con tasas actualizadas cada hora, interfaz intuitiva y sin límites de uso.</strong> Puedes probarlo ahora mismo en nuestro <a href="index.html" title="Ir al conversor">conversor principal</a>.</p>
+        </section>
+
+        <!-- ====== MISIÓN Y VISIÓN ====== -->
+        <section class="section-about">
+          <h2>🎯 Misión y Visión</h2>
+          
+          <h3>🔵 Nuestra Misión</h3>
+          <p>Proporcionar una herramienta de conversión de monedas <strong>precisa, confiable y completamente gratuita</strong> que facilite las transacciones internacionales y la planificación financiera de usuarios en todo el mundo, sin comprometer la privacidad ni la experiencia del usuario.</p>
+
+          <h3>🔷 Nuestra Visión</h3>
+          <p>Ser reconocidos como el <strong>conversor de monedas de referencia</strong> para estudiantes, profesionales y viajeros, destacando por nuestra precisión, transparencia y compromiso con la tecnología de código abierto y el acceso universal a la información financiera.</p>
+        </section>
+
+        <!-- ====== VALORES ====== -->
+        <section class="section-about">
+          <h2>💎 Nuestros Valores</h2>
+          
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon">🎯</div>
+              <div class="value-title">Precisión</div>
+              <div class="value-description">Tasas exactas actualizadas cada hora desde fuentes oficiales del mercado internacional</div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">🆓</div>
+              <div class="value-title">Acceso Universal</div>
+              <div class="value-description">Herramienta 100% gratuita sin límites, sin registro y sin barreras de entrada</div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">🔒</div>
+              <div class="value-title">Privacidad</div>
+              <div class="value-description">Tus datos permanecen en tu dispositivo. No rastreamos ni vendemos información</div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">⚡</div>
+              <div class="value-title">Rapidez</div>
+              <div class="value-description">Conversiones instantáneas con resultados en menos de 1 segundo</div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">🎨</div>
+              <div class="value-title">Simplicidad</div>
+              <div class="value-description">Interfaz intuitiva y minimalista. Fácil de usar para cualquier persona</div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon">📚</div>
+              <div class="value-title">Transparencia</div>
+              <div class="value-description">Mostramos nuestras fuentes y el origen de cada tasa de cambio</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== TECNOLOGÍA ====== -->
+        <section class="section-about">
+          <h2>🛠️ Tecnología Utilizada</h2>
+          <p>Nuestro conversor está construido con tecnologías modernas y confiables que garantizan rendimiento, seguridad y escalabilidad:</p>
+
+          <div class="tech-stack">
+            <div class="tech-item">
+              <div class="tech-icon">📘</div>
+              <div class="tech-name">TypeScript</div>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">🌐</div>
+              <div class="tech-name">HTML5</div>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">🎨</div>
+              <div class="tech-name">CSS3</div>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">🔌</div>
+              <div class="tech-name">REST APIs</div>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">💾</div>
+              <div class="tech-name">LocalStorage</div>
+            </div>
+
+            <div class="tech-item">
+              <div class="tech-icon">📱</div>
+              <div class="tech-name">Responsive Design</div>
+            </div>
+          </div>
+
+          <h3>🔗 APIs Utilizadas</h3>
+          <ul>
+            <li><strong><a href="https://www.exchangerate-api.com" target="_blank" rel="noopener noreferrer external">ExchangeRate-API</a>:</strong> Para obtener tasas de cambio actualizadas en tiempo real</li>
+            <li><strong><a href="https://restcountries.com" target="_blank" rel="noopener noreferrer external">REST Countries</a>:</strong> Para información detallada sobre países y monedas</li>
+          </ul>
+
+          <h3>♻️ Arquitectura del Sistema</h3>
+          <p>Implementamos una arquitectura basada en <strong>Programación Orientada a Objetos (POO)</strong> con TypeScript, siguiendo principios SOLID y patrones de diseño modernos:</p>
+          <ul>
+            <li><strong>Modelo-Vista:</strong> Separación clara entre lógica de negocio y presentación</li>
+            <li><strong>Gestión de Estado:</strong> Caché inteligente de tasas con localStorage</li>
+            <li><strong>Manejo de Errores:</strong> Sistema robusto para APIs fallidas</li>
+            <li><strong>Optimización SEO:</strong> Estructura semántica y metadatos completos</li>
+          </ul>
+        </section>
+
+        <!-- ====== LÍNEA DE TIEMPO ====== -->
+        <section class="section-about">
+          <h2>📅 Línea de Tiempo del Proyecto</h2>
+          
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">Enero 2025</div>
+              <div class="timeline-content">
+                <strong>Inicio del Proyecto:</strong> Investigación y planificación. Análisis de competidores y definición de requisitos técnicos.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">Febrero 2025</div>
+              <div class="timeline-content">
+                <strong>Desarrollo del MVP:</strong> Implementación del conversor básico con TypeScript y POO. Integración de APIs de tasas de cambio.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">Marzo 2025</div>
+              <div class="timeline-content">
+                <strong>Funcionalidades Avanzadas:</strong> Historial de conversiones, consulta de tasas y sistema de caché inteligente.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">Abril 2025</div>
+              <div class="timeline-content">
+                <strong>Mejoras de UX/UI:</strong> Rediseño visual, animaciones y optimización de la interfaz de usuario.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">Mayo 2025</div>
+              <div class="timeline-content">
+                <strong>Información de Países:</strong> Integración con REST Countries API para mostrar datos geográficos relevantes.
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">Noviembre 2025</div>
+              <div class="timeline-content">
+                <strong>Lanzamiento Oficial:</strong> Optimización SEO completa, landing page y documentación final del proyecto.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====== EQUIPO ====== -->
+        <section class="section-about">
+          <h2>👥 Nuestro Equipo</h2>
+          <p>Un grupo de estudiantes apasionados por la tecnología y el desarrollo web moderno:</p>
+
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="team-avatar">👨‍💻</div>
+              <div class="team-name">Equipo de Desarrollo</div>
+              <div class="team-role">Frontend & Backend</div>
+            </div>
+
+            <div class="team-member">
+              <div class="team-avatar">🎨</div>
+              <div class="team-name">Equipo de Diseño</div>
+              <div class="team-role">UX/UI Design</div>
+            </div>
+
+            <div class="team-member">
+              <div class="team-avatar">📊</div>
+              <div class="team-name">Equipo de Análisis</div>
+              <div class="team-role">Data & Research</div>
+            </div>
+
+            <div class="team-member">
+              <div class="team-avatar">🔍</div>
+              <div class="team-name">Equipo SEO</div>
+              <div class="team-role">Optimización Web</div>
+            </div>
+          </div>
+
+          <p style="text-align: center; margin-top: 20px; color: #666;">
+            <strong>Electiva II - 2025</strong><br>
+            Universidad | Proyecto Académico de Desarrollo Web
+          </p>
+        </section>
+
+        <!-- ====== AGRADECIMIENTOS ====== -->
+        <section class="section-about">
+          <h2>🙏 Agradecimientos</h2>
+          <p>Este proyecto no hubiera sido posible sin el apoyo de:</p>
+          <ul>
+            <li><strong>Nuestros profesores:</strong> Por su guía y retroalimentación constante</li>
+            <li><strong>ExchangeRate-API:</strong> Por proporcionar tasas de cambio confiables</li>
+            <li><strong>REST Countries:</strong> Por su completa base de datos de países</li>
+            <li><strong>La comunidad Open Source:</strong> Por las herramientas y recursos gratuitos</li>
+            <li><strong>Nuestros usuarios:</strong> Por confiar en nuestra plataforma y enviarnos feedback valioso</li>
+          </ul>
+        </section>
+
+        <!-- ====== PREGUNTAS FRECUENTES ====== -->
+        <section class="section-about">
+          <h2>❓ Preguntas Frecuentes</h2>
+          
+          <h3>¿De dónde obtienen las tasas de cambio?</h3>
+          <p>Utilizamos <strong>ExchangeRate-API</strong>, una fuente confiable que obtiene datos del mercado internacional de divisas. Las tasas se actualizan cada hora para garantizar precisión.</p>
+
+          <h3>¿Guardan mi información personal?</h3>
+          <p>No. Todo se almacena localmente en tu navegador usando localStorage. No enviamos ningún dato a servidores externos. Consulta más detalles en nuestra <a href="historial.html" title="Ver historial">página de historial</a>.</p>
+
+          <h3>¿Por qué es gratuito?</h3>
+          <p>Es un proyecto académico sin fines de lucro. Nuestro objetivo es aprender y proporcionar una herramienta útil para la comunidad.</p>
+
+          <h3>¿Puedo usar el código del proyecto?</h3>
+          <p>Este es un proyecto educativo de código abierto. Puedes consultar nuestra arquitectura y tecnologías en esta misma página.</p>
+
+          <h3>¿Hay límites de uso?</h3>
+          <p>No hay límites. Puedes realizar tantas conversiones como necesites, sin restricciones ni cargos.</p>
+        </section>
+
+        <!-- ====== CONTACTO Y CTA ====== -->
+        <section class="section-about">
+          <h2>📧 Contacto y Feedback</h2>
+          <p>Nos encantaría escuchar tu opinión sobre nuestro conversor. Tu feedback nos ayuda a mejorar continuamente.</p>
+          
+          <p><strong>¿Encontraste un error? ¿Tienes una sugerencia?</strong></p>
+          <p>Si encuentras algún problema técnico o tienes ideas para nuevas funcionalidades, no dudes en reportarlo. Estamos comprometidos con la mejora continua de nuestra plataforma.</p>
+
+          <div class="cta-about">
+            <p><strong>¿Listo para convertir monedas?</strong></p>
+            <a href="index.html" class="cta-button" title="Ir al conversor">💰 Comenzar Ahora</a>
+          </div>
+        </section>
+      </article>
+    </div>
+
+    <!-- ====== 5 IMÁGENES OPTIMIZADAS ====== -->
+    <section class="imagenes-inicio" aria-label="Visualización del proyecto">
+      <h2 class="sr-only">Imágenes relacionadas con nuestro proyecto</h2>
+      
+      <figure>
+        <img src="img/estadisticas.webp" 
+             alt="Gráficos estadísticos y análisis de datos del conversor de monedas del proyecto universitario" 
+             title="Estadísticas del proyecto"
+             width="400" 
+             height="300" 
+             loading="eager">
+        <figcaption>Análisis y estadísticas del proyecto</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="img/conversion.webp" 
+             alt="Interfaz de conversión de monedas mostrando proceso de cálculo de divisas internacionales" 
+             title="Proceso de conversión"
+             width="400" 
+             height="300" 
+             loading="lazy">
+        <figcaption>Proceso de conversión de divisas</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="img/historial.webp" 
+             alt="Sistema de historial de conversiones para seguimiento de operaciones y registro de tasas" 
+             title="Historial de conversiones"
+             width="400" 
+             height="300" 
+             loading="lazy">
+        <figcaption>Sistema de historial</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="img/monedas-mundo.webp" 
+             alt="Representación de monedas internacionales de diferentes países del mundo para conversión global" 
+             title="Monedas mundiales"
+             width="400" 
+             height="300" 
+             loading="lazy">
+        <figcaption>Monedas de todo el mundo</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="img/grafico-tasas.webp" 
+             alt="Gráfico de tasas de cambio mostrando fluctuaciones y tendencias del mercado de divisas" 
+             title="Gráfico de tasas"
+             width="400" 
+             height="300" 
+             loading="lazy">
+        <figcaption>Gráfico de tasas de cambio</figcaption>
+      </figure>
+    </section>
+
+    <!-- ====== ENLACES RELACIONADOS ====== -->
+    <section class="enlaces-relacionados">
+      <h2>Explora Nuestras Herramientas</h2>
+      <nav aria-label="Enlaces útiles">
+        <ul>
+          <li><a href="landing.html" title="Landing">🏠 Página Principal de Bienvenida</a></li>
+          <li><a href="index.html" title="Conversor">💱 Conversor de Monedas</a></li>
+          <li><a href="tasas.html" title="Tasas">📈 Consultar Tasas de Cambio</a></li>
+          <li><a href="historial.html" title="Historial">📊 Ver Historial de Conversiones</a></li>
+          <li><a href="https://www.xe.com" target="_blank" rel="noopener noreferrer external">🌐 XE Currency</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer role="contentinfo">
+    <p>© 2025 Conversor de Monedas - Electiva II | 
+       <a href="landing.html">Inicio</a> | 
+       <a href="index.html">Conversor</a> | 
+       <a href="tasas.html">Tasas</a> | 
+       <a href="historial.html">Historial</a> | 
+       <a href="acerca-de.html">Acerca de</a>
+    </p>
+  </footer>
+
+  <!-- NO SE NECESITA Script.js porque solo son enlaces de navegación -->
+</body>
+</html>
